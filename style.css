@@ -117,7 +117,7 @@ a.btn-gradient.rounded {
 
 
 #dark .btn-gradient {
-    color: rgba(255, 255, 255, 0.54);
+    color: var(--text);
     box-shadow: 0 0 1px rgba(255, 255, 255, 0.54);
     display: flex;
     justify-content: center;
@@ -195,6 +195,65 @@ a:hover span.tooltip {
     opacity: 0.9;
 }
 
+/***
+CTA
+***/
+
+.btn-cta, .btn-cta-2 {
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn-cta {
+    display: block;
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    z-index: 3;
+    opacity: 0.25;
+    font-family: sans-serif;
+    border: solid 1px white;
+
+}
+
+.btn-cta i {
+    margin-right: 10px;
+}
+
+.btn-cta:hover {
+    background: linear-gradient(-45deg, #FFA63D, #ff7300, #e06601);
+    background-size: 600%;
+    color: white;
+    opacity: 1;
+    animation: anime 16s linear infinite;
+    border: none;
+}
+
+.btn-cta-2 {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    filter: blur(30px);
+    opacity: 0.8;
+}
+
+@keyframes anime {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
 
 
 /***
@@ -310,5 +369,3 @@ ANIMATIONS
         opacity: 1;
     }
 }
-
-
