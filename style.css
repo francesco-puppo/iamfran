@@ -5,7 +5,7 @@
     --text-bold: #D2D2D2;
     --highlight: #ff7300;
     --highlight-dark: #ff5100;
-    --higlight-gradient-dark: linear-gradient(180deg, var(--highlight-dark),var(--highlight));
+    --higlight-gradient-dark: linear-gradient(180deg, var(--highlight-dark), var(--highlight));
     --highlight-opa: #4444443d;
 }
 
@@ -49,7 +49,7 @@ p {
     color: var(--text);
 
     text-align: left;
-    
+
 }
 
 .home .main p {
@@ -105,7 +105,12 @@ SHADOW LIGHT
     height: 100px;
     max-width: 80%;
     margin-top: -100px;
-    box-shadow: 0 50px 129px 0 rgba(76, 170, 175, 0.37), 0 30px 50px 0 rgba(120, 35, 160, 0.2), 0 17px 40px 0 rgba(68, 25, 184, 0.1), 0 4px 16px 0 rgba(68, 25, 184, 0.2);
+    box-shadow: 0 50px 120px 0 rgba(76, 170, 175, 0.2), 0 30px 50px 0 rgba(120, 35, 160, 0.1), 0 17px 40px 0 rgba(9, 9, 9, 0.1), 0 4px 16px 0 rgba(9, 9, 9, 0.2);
+    -webkit-animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+    animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+    animation-delay: 2.5s;
+    opacity: 1;
+
 }
 
 /* Social links */
@@ -250,7 +255,8 @@ footer {
 
 }
 
-footer p, footer a {
+footer p,
+footer a {
     font-family: monospace;
     line-height: 10px;
     color: var(--background);
@@ -277,9 +283,10 @@ CREDITS
 }
 
 .credits .content p {
-    color : var(--text);
+    color: var(--text);
     font-family: monospace;
     font-size: 1.25rem;
+    line-height: 1.2rem;
 }
 
 .credits .content a {
@@ -307,14 +314,16 @@ CREDITS
 MEDIA QUERIES
 ***/
 
-@media (max-width: 840px) {
-    section.main {
+@media only screen and (max-width: 840px) {
+    .main {
         padding: 0 2em;
     }
+
     div.content {
         width: auto;
     }
-    .home section p {
+
+    .home .main .content p {
         font-size: 2em;
     }
 }
