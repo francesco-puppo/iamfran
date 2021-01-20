@@ -279,6 +279,11 @@ CREDITS
 .credits .social {
     margin-top: 5rem;
     justify-content: center;
+
+}
+
+.credits .social a {
+    text-decoration: none;
 }
 
 /***
