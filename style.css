@@ -106,11 +106,13 @@ SHADOW LIGHT
     max-width: 80%;
     margin-top: -100px;
     box-shadow: 0 50px 120px 0 rgba(76, 170, 175, 0.2), 0 30px 50px 0 rgba(120, 35, 160, 0.1), 0 17px 40px 0 rgba(9, 9, 9, 0.1), 0 4px 16px 0 rgba(9, 9, 9, 0.2);
+    opacity: 1;
+}
+
+.home .shadow-light {
     -webkit-animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
     animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
     animation-delay: 2.5s;
-    opacity: 1;
-
 }
 
 /* Social links */
