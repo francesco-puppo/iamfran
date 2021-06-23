@@ -3,8 +3,8 @@
     --background-gradient: linear-gradient(180deg, #090909, #04040f);
     --text: #A2A2A2;
     --text-bold: #D2D2D2;
-    --highlight: #ff7300;
-    --highlight-dark: #ff5100;
+    --highlight: #eb3e3e;
+    --highlight-dark: #8b1f1f;
     --higlight-gradient-dark: linear-gradient(180deg, var(--highlight-dark), var(--highlight));
     --highlight-opa: #4444443d;
 }
