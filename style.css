@@ -184,17 +184,17 @@ a.btn-gradient.rounded {
     animation: slide-in-blurred-bottom 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
-.btn-gradient.linkedin {
+.btn-gradient.twitter {
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
 }
 
-.btn-gradient.twitter {
+.btn-gradient.behance {
     -webkit-animation-delay: 3.25s;
     animation-delay: 3.25s;
 }
 
-.btn-gradient.behance {
+.btn-gradient.linkedin {
     -webkit-animation-delay: 3.5s;
     animation-delay: 3.5s;
 }
